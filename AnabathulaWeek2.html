@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            created by Anabathula
+        -->
+        <title>Anabathula Lab Week 2</title>
+        <meta charset="UTF-8">
+        <script type="text/Javascript">
+            //created by Anabathula
+            function sayHello() {
+                //this function takes the input from the text box and displays a welcome message
+
+                let userInput = document.getElementById("nameTextBox").
+                value;
+                //display message inside paragraph. 
+                document.getElementById("resultPara").innerHTML = 
+                userInput + "Hello and Welcome to You. Let grooove with JaaaavaScript";
+
+            }//end sayHelloo()
+        </script>
+
+    </head>
+    <body>
+        <h1>Welcome to my First Javascript Page!</h1>
+        <form method="post">
+
+            <p>
+                <label>Please enter your name: </label>
+                <input type="text" id="nameTextBox">
+            </p>
+            <p>
+                <input type="button" id="helloButton" value="Say Hello" onclick="sayHello()">
+            </p>
+            <p id="resultPara">
+
+            </p>
+
+        </form>
+  
+    </body>
+</html>
